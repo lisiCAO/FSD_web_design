@@ -1,0 +1,80 @@
+body {
+  background-color: #f1faee;
+}
+
+button {
+  font-size: 30px;
+  background-color: #a8dadc;
+}
+
+h1,
+h2 {
+  color: #1d3557;
+}
+
+#signup {
+  background-color: #1d3557;
+  color: #f1faee;
+}
+
+span {
+  color: #457b9d;
+}
+
+.tag {
+  background-color: #e63946;
+  color: #f1faee;
+  font-size: 16px;
+}
+
+.post a {
+  color: #457b9d;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+footer a {
+  color: #e63946;
+}
+
+/* adjacent selector :  */
+h2 + button {
+  font-size: 20px;
+}
+
+/* direct child :
+  Select only the links that are direct children of 
+  footer element
+*/
+footer > a {
+  color: #457b9d;
+}
+
+input[type="password"] {
+  color: greenyellow;
+}
+
+a[href*="google"] {
+  color: teal;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+.post button:active {
+  background-color: aqua;
+}
+
+.post:nth-of-type(2n) {
+  background-color: aquamarine;
+}
+
+/* Seude-element */
+h2::first-letter {
+  font-size: 50px;
+}
+
+p::selection {
+  background-color: #fcbf49;
+}

@@ -1,0 +1,19 @@
+/*Give all li elements the text color blue
+
+Give all elements with the class of done the text color grey
+
+Give the element with the id clear a red background and white text
+*/
+
+*{
+    color: blue;
+}
+*.done{
+    color: grey;
+}
+#clear{
+    background-color: red;
+    color: white;
+}
+```
+```

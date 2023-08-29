@@ -1,0 +1,12 @@
+* {
+  margin: auto;
+  padding: auto;
+}
+
+#myForm {
+  color: greenyellow;
+}
+
+button {
+  color: inherit;
+}

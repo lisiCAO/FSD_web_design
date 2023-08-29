@@ -1,0 +1,73 @@
+/* universal-selector */
+* {
+  margin: 0;
+  padding: 0;
+  color: rgb(24, 218, 82);
+}
+
+h1 {
+  color: rgba(214, 188, 210, 0.3);
+  background-color: #352ace;
+  border: 2px solid goldenrod;
+  border-left-style: dotted;
+  border-right-style: dotted;
+}
+
+/* !important 
+by adding !important to a selector
+it will take highest priority
+*/
+p {
+  color: beige;
+}
+
+.myparagraph {
+  color: teal;
+}
+
+#specialp {
+  color: rgb(221, 166, 16);
+}
+
+.first-li {
+  color: red;
+}
+
+li:nth-child(even) {
+  color: blue;
+}
+/* li:nth-child(3) {
+  color: rgb(0, 255, 98);
+} */
+
+/* 
+AB + N 
+A is an integer step size,
+B is an integer offset,
+n is all nonnegative integers, starting from 0.
+*/
+/* li:nth-child(-2n + 4) {
+  color: rgb(255, 0, 200);
+} */
+
+a:link {
+  /* color: red; */
+}
+a:visited {
+  /* color: rgb(62, 99, 155); */
+}
+a:hover {
+  color: rgb(62, 155, 116);
+}
+
+#dummy {
+  color: red;
+}
+
+#dummy {
+  color: red;
+}
+
+#dummy {
+  color: beige;
+}

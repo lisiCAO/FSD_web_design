@@ -1,0 +1,25 @@
+* {
+  font-size: 10px;
+}
+
+li {
+  color: blue;
+}
+
+/* li:nth-child(odd) {
+  color: grey;
+} */
+
+.done {
+  color: grey;
+}
+
+#clear {
+  color: white;
+  background-color: red;
+  font-size: 2rem;
+}
+
+.buttons-div {
+  font-size: 15px;
+}

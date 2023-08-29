@@ -1,0 +1,22 @@
+/* uppercase all the letters, without touching the html! 
+set the font-family to be 'monospace'
+center align the text
+set the font weight to 100
+make the text size 40px
+set spacing between letters to 20px
+add a wavy plum underline (plum is the color)
+*/
+
+/* Path: app.css */
+
+h1 {
+    text-transform: uppercase;
+    font-family: monospace;
+    text-align: center;
+    font-weight: 100;
+    font-size: 40px;
+    letter-spacing: 20px;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: plum;
+}

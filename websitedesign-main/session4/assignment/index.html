@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2</title>
+  </head>
+  <body>
+    <header>
+      <h3>Black Goose Bistro | Pizza-on-Demand</h3>
+      <p>
+        Our 12" wood-fired pizzas are available for delivery. Build your<br />
+        custom pizza and we'll deliver it within an hour.
+      </p>
+      <div>Your Information</div>
+      <br />
+      <form
+        action="http://blackgoosebistro.com/pizza.php"
+        id="frmInformation"
+        method="POST"
+      >
+        <div>
+          <label for="txtBoxName">Name:</label>
+          <input type="text" id="txtBoxName" name="customerName" />
+        </div>
+        <div>
+          <label for="txtBoxAddress">Address:</label>
+          <input type="text" id="txtBoxAddress" name="address" />
+        </div>
+        <div>
+          <label for="txtTelephone">Telephone:</label>
+          <input type="tel" id="txtTelephone" name="telephone" />
+        </div>
+        <div>
+          <label for="txtEmail">Email:</label>
+          <input type="email" id="txtEmail" name="email" />
+        </div>
+        <div>
+          <label for="txtInstructions">Delivery instructions:</label><br />
+          <textarea
+            id="txtInstructions"
+            rows="4"
+            cols="35"
+            maxlength="400"
+            name="instructions"
+          ></textarea>
+        </div>
+        <div>
+          <p>
+            <strong> Design your dream pizza </strong>
+          </p>
+          <p style="line-height: 0">pizza specs</p>
+        </div>
+        <br />
+        <div>
+          Crust(choose one): <br />
+          <input type="radio" id="crust1" name="crust" value="Classic White" />
+          <lable for="crust1">Classic White</lable>
+          <br />
+          <input type="radio" id="crust2" name="crust" value="Multi Grain" />
+          <lable for="crust2">Multi Grain</lable>
+          <br />
+          <input
+            type="radio"
+            id="crust3"
+            name="crust"
+            value="Cheese-stuffed crust"
+          />
+          <lable for="crust3">Cheese-stuffed crust</lable>
+          <br />
+          <input type="radio" id="crust4" name="crust" value="Gluten-free" />
+          <lable for="crust4">Gluten-free</lable>
+        </div>
+        <br />
+        <div>
+          Toppings(Choose as many as you want):<br />
+          <input
+            type="checkbox"
+            id="RS"
+            name="toppings"
+            value="Red sauce"
+            checked
+          />
+          <label for="RS">Red Sauce</label>
+          <br />
+          <input type="checkbox" id="WS" name="toppings" value="White sauce" />
+          <label for="WS">White Sauce</label>
+          <br />
+          <input type="checkbox" id="MC" name="toppings" value="Cheese" />
+          <label for="MC">Mozzarella Cheese</label>
+          <br />
+          <input
+            type="checkbox"
+            id="Pepperoni"
+            name="toppings"
+            value="Pepperoni"
+          />
+          <label for="Pepperoni">Pepperoni</label>
+          <br />
+          <input
+            type="checkbox"
+            id="Mushrooms"
+            name="toppings"
+            value="Mushrooms"
+          />
+          <label for="Mushrooms">Mushrooms</label>
+        </div>
+        <div>
+          Number : <br />
+          <label for="pizzaCount">How many pizzas ?</label>
+          <select id="pizzaCount" name="number">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <input type="submit" name="submit" value="Bring me a pizza" />
+          &nbsp
+          <input type="reset" name="reset" value="Reset" />
+        </div>
+      </form>
+    </header>
+  </body>
+</html>

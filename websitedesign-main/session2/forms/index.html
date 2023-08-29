@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form example</title>
+  </head>
+  <body>
+    <header>
+      <h1>Form Examples</h1>
+    </header>
+    <article>
+      <h2>here is a form</h2>
+
+      <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+
+      <form action="#" method="post" target="dummyframe">
+        <div>
+          <label for="fname">Enter your first name: </label>
+          <input type="text" name="first_name" id="fname" required minlength="2" maxlength="70"></input>
+        </div>
+        <div>
+          <label for="lname">Enter your last name: </label>
+          <input type="text" name="last_name" id="lname" required minlength="2" maxlength="70"></input>
+        </div>
+
+        <div>
+          <input type="submit" value="Subscribe!">
+        </div>
+       
+      </form>
+    </article>
+  </body>
+</html>

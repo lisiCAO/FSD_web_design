@@ -1,0 +1,23 @@
+1 -Using Html Boiler plate plugin
+to generate Html tags -> ! + tab
+
+2- Live Server extension to run the Html design in our brawser after each SAVE
+
+3- Lorem in the tag generates some dummy text for us
+
+4- Prettier- Code formatter 
+to format the files in VS code to be aligned in team
+
+--------
+1- <h1>, <h2> .... <h6>
+2- <strong> <em>
+3- Semantic
+4-MDN -> reference for the HTML elements
+5- <ol> <ul> and their attributes
+ ----
+
+Image preview plugin to see the images without looking into the folder and file 
+
+6- <img> for the images with the src
+7- unsplash is a good website to download and use free images
+8- <a> which is the hyperlink 

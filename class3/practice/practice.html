@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <meta name ="viewport" content = "width=device-width, initial-scale=1.0" />
         <title>Form example</title>
+        <link rel="stylesheet" href="css/styles.css" />
     </head>
     <body>
         <header>
@@ -37,12 +38,14 @@
                     </div>
                     <div>
                         <label for="certID">Certificates</label>
-                        <input type="text"  name="certID" id="certID" list="certID"/>
+                        <input type="text" name="certID" id="certID" list="certID"/>
                         <datalist id="certID">
                             <option disabled> Select one</option>
-                            <option value="PHD"/> 
-                            <option value="Bsc"/>
-                            <option value="Msc"/>
+                            <option value="PHD"> PHD</option>
+                            <option value="Bsc">Bsc</option>
+                            <option value="Msc">Msc</option>
+                            <option value="MBA">MBA</option>
+                        </datalist>
                     </div>
                     <div>
                         <lable> What 80s band did you listen to </lable>
@@ -59,12 +62,12 @@
                         </select>
                     </div>
                     <select name="icecream" size="3" multiple>
-                        <optgroup lable="traditional">
+                        <optgroup label="traditional">
                             <option value="vanilla">Vanilla</option>
                             <option value="chocolate">Chocolate</option>
                             <option value="strawberry">Strawberry</option>
                         </optgroup>
-                        <optgroup lable="exotic">
+                        <optgroup label="exotic">
                             <option value="green tea">Green Tea</option>
                             <option value="durian">Durian</option>
                             <option value="mango">Mango</option>
@@ -75,17 +78,23 @@
                         <input type="file" name="fileUpload" id="fileUpload" accept="img/png, img/jpeg">
                     </div>
                     <div>
+                        <input type="hidden" name="hiddenField" id="hiddenField" value="http://www.example.com/thankyou.html">
+                    </div>
+                    
+                    <div>
                         <lable for="dateField">Date</lable>
                         <input type="date" name="dateField" id="dateField" min="2019-01-01" max="2019-12-31">
                     </div>
+                   
                     <div>
                         <lable for="weekField">Week</lable>
                         <input type="week" name="weekField" id="weekField" min="2019-W01" max="2019-W52">
 
                     </div>
                     <div>
-                        <input type="number" name="guests" id="">
-                        <
+                        <input type="number" name="guests" id="guests" min="1" max="6">
+                        <input type="range" name="range" id="range" min="1" max="6">
+                        <input type="color" name="color" id="color" value="#e66465">
                     </div>
 
                 </form>

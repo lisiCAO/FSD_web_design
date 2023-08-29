@@ -1,0 +1,12 @@
+h3 {
+  color: #0aae49;
+}
+
+a {
+  font-size: 2em;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 5px 5px #558abb;
+}

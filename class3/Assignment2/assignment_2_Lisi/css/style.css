@@ -1,0 +1,43 @@
+fieldset{
+    border: none;
+}
+
+.custom-radio{
+    display:none;
+}
+
+.custom-radio + label::before{
+    content: '( )';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    font-size: 18px;
+    line-height:1;
+}
+
+.custom-radio:checked + label::before{
+    content: '(X)';
+}
+
+
+.custom-checkbox{
+    display: none;
+}
+
+.custom-checkbox + label::before{
+    content: '[ ]';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    font-size: 18px;
+    line-height:1;
+}
+
+.custom-checkbox:checked + label::before{
+    content: '[X]';
+}
+
+h4{
+    margin-bottom: -15px;
+}
+

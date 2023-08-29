@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form example</title>
+  </head>
+  <body>
+    <header>
+      <h1>Form Examples</h1>
+    </header>
+    <article>
+      <h2>here is a form</h2>
+
+      <iframe name="dummyframe" id="dummyframe" style="display: none"></iframe>
+
+      <form action="#" method="post" target="dummyframe">
+        <div>
+          <label for="fname">Enter your first name: </label>
+          <input
+            required
+            minlength="2"
+            maxlength="70"
+            type="text"
+            name="first_name"
+            id="fname"
+          />
+        </div>
+        <div>
+          <label for="lname">Enter your last name: </label>
+          <input
+            type="text"
+            name="last_name"
+            id="lname"
+            required
+            minlength="2"
+            maxlength="70"
+          />
+        </div>
+
+        <div>
+          <label for="srch">Search</label>
+          <input type="search" id="srch" />
+        </div>
+
+        <div>
+          <label for="tel">Tel</label>
+          <input
+            type="tel"
+            id="tel"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          />
+          <small>Format: 123-456-7890</small>
+        </div>
+
+        <div>
+          <label for="certId">Certificates</label>
+          <input type="text" id="certId" required name="cert" list="certs" />
+          <datalist id="certs">
+            <option value="BSc">Bachelor</option>
+            <option value="PHD"></option>
+          </datalist>
+        </div>
+
+        <div>
+          <label>What 80s band did you listen to</label>
+          <!--multiple attribute for choosing multiple options-->
+          <select name="EightiesBand" size="3" multiple>
+            <option value="">--Please choose an option--</option>
+            <option>The Cure</option>
+            <option>Cocteau Twins</option>
+            <option>Tears for Fears</option>
+            <option>Thompson Twins</option>
+            <option value="EBTG">Everything But the Girl</option>
+          </select>
+        </div>
+
+        <select name="icecream" size="7" multiple>
+          <optgroup label="traditional">
+            <option>Vanialla</option>
+            <option>Chocolate</option>
+          </optgroup>
+          <optgroup label="fancy">
+            <option>Super plaline</option>
+            <option>Nut Suprise</option>
+            <option>Candy Corn</option>
+          </optgroup>
+        </select>
+
+        <div>
+          <label for="fileUpload">Upload your file</label>
+          <input
+            type="file"
+            name="Upload"
+            id="fileUpload"
+            accept="image/png, image/jpeg"
+          />
+        </div>
+
+        <input
+          type="hidden"
+          name="link"
+          value="http://www.example.com/thankyou.html"
+        />
+
+        <div>
+          <label for="dateField">Date</label>
+          <input type="date" id="dateField" />
+        </div>
+
+        <div>
+          <label for="weekField">Week</label>
+          <input type="week" id="weekField" />
+        </div>
+
+        <div>
+          <input type="number" name="guests" min="1" max="6" />
+          <input type="range" name="range" min="1" max="6" />
+          <input type="color" name="color" value="#e66465" />
+        </div>
+
+        <div>
+          <input type="submit" value="Subscribe!" />
+        </div>
+      </form>
+    </article>
+  </body>
+</html>
