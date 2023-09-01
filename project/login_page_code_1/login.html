@@ -1,0 +1,82 @@
+<!-- 
+    File: login_page.html
+    Author: Lisi Cao
+    Date: August 31, 2023
+    Description: click button "login", turn to page login.
+    Contact: lisi.cao@johnabbottcollege.net
+    Copyright: 2023
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login_style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Design Proposal Implementation</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="container">
+
+                <div class="nav_left_container">  
+                    <div class="item">
+                        <img src="logo.png" alt="Website Logo">
+                    </div>
+                    <div class="item">
+                        <label id="input_search">Browser</label>
+                        <input type="text" id="input_search" placeholder="🔍 What do you want to learn?" />
+                    </div>
+                </div>  <!-- end of nav_right_container -->
+
+                <div class="nav_right_container">
+                    <button class="cart-btn">🛒</button>
+                    <button class="login-btn">Login</button>
+                </div>
+                
+            </div> <!-- end of .nav_container -->
+        </nav>
+
+        <div class="login-modal">
+            <div class="container">
+
+                <div class="close_tag_container">
+                    <span class="close-btn">&times;</span>
+                </div> 
+
+                <div class="header_container">
+
+                    <div class="modal_label_container">
+                        <h2 class="login-title">Login</h2>
+                    </div>
+
+                    <div class="new_account_container">
+                        <span>New here? <a href="#">Create Account</a></span>
+                    </div>
+
+                </div> <!-- end of .header_container-->
+
+                <form class="login-form">
+                    <div class="input-container">
+                        <input type="email" required autofocus id="email" onfocus="activateLabel(this)" onblur="deactivateLabel(this)">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" id="password" required onfocus="activateLabel(this)" onblur="deactivateLabel(this)">
+                        <label for="password">Password</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Login</button>
+                </form>
+                
+                
+                <div class="forget_password_container">
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+            </div> <!-- end of .modal_container -->
+        </div> <!-- end of login_modal -->
+    </div> <!-- end of .body_container -->
+    <script src="scripts.js"></script>
+</body>
+</html>
