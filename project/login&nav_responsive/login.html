@@ -1,0 +1,118 @@
+<!-- 
+    File: login_page.html
+    Author: Lisi Cao
+    Date: August 31, 2023
+    Description: click button "login", turn to page login.
+    Contact: lisi.cao@johnabbottcollege.net
+    Copyright: 2023
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Basic meta tags for responsive design and character set -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Linking external styles and scripts -->
+        <link rel="stylesheet" href="login_style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <title>Design Proposal Implementation</title>
+    </head>
+    <body>
+        <!-- Main container -->
+        <div class="container">
+
+            <!-- Navigation Bar -->
+            <nav>
+                <!-- Navigation container -->
+                <div class="container">
+                    <!-- Hamburger Icon -->
+                    <div class="hamburger-icon" >
+                        &#9776
+                    </div>        
+                    <!-- Offcanvas Menu -->
+                    <div class="offcanvas">
+                        <a href="#" class="login-link">Login</a>
+                        <a href="#">Signup</a>
+                        <a href="#">Browse</a>
+                        <a href="#">Support</a>
+                    </div>
+                    
+                    <!-- Left section of navigation (logo, search bar etc.) -->
+                    <div class="nav_left_container">  
+                        <!-- Logo -->
+                        <div class="item">
+                            <a class="navbar-brand" href="#">
+                                <img src="logo.png" alt="Website Logo">
+                            </a>
+                        </div>
+                        <!-- Adjust the browser link -->
+                        <div class="item"> 
+                            <a href="#" class="browser-item">Browser</a> 
+                        </div>
+                        <!-- Search form -->
+                        <form class="item search-form">
+                            <input type="text" id="input_search" placeholder=" What do you want to learn?" />
+                            <button type="submit" class="search-btn"> 🔍 </button>
+                        </form>
+                    </div>  
+                    <!-- Right section of navigation (cart, login button) -->
+                    <div class="nav_right_container">
+                        <!-- Search Button -->
+                        <button class="search-btn-small">🔍</button>
+                        <!-- Cart button -->
+                        <button class="cart-btn"><i class="bi bi-cart"></i></button>
+                        <!-- Login button -->
+                        <button class="login-btn">Login</button>
+                    </div>
+                </div>
+            </nav>                
+
+            <!-- Login Modal Dialog -->
+            <div class="login-modal">
+                <div class="container">
+                    <!-- Close button for modal -->
+                    <div class="close_tag_container">
+                        <span class="close-btn">&times;</span>
+                    </div> 
+                    <!-- Modal Header: Title and account creation link -->
+                    <div class="header_container">
+                        <!-- Title -->
+                        <div class="modal_label_container">
+                            <h2 class="login-title">Login</h2>
+                        </div>
+                        <!-- Account creation link -->
+                        <div class="new_account_container">
+                            <span>New here? <a href="#">Create Account</a></span>
+                        </div>
+                    </div> 
+                    
+                    <!-- Login form -->
+                    <form class="login-form">
+                        <!-- Email input with dynamic label -->
+                        <div class="input-container">
+                            <input type="email" required autofocus id="email" onfocus="activateLabel(this)" onblur="deactivateLabel(this)">
+                            <label for="email">Email</label>
+                        </div>
+                        <!-- Password input with dynamic label -->
+                        <div class="input-container">
+                            <input type="password" id="password" required onfocus="activateLabel(this)" onblur="deactivateLabel(this)">
+                            <label for="password">Password</label>
+                        </div>
+                        <!-- Login button -->
+                        <button type="submit" class="submit-btn">Login</button>
+                    </form>
+                    
+                    <!-- Forgot password link -->
+                    <div class="forget_password_container">
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                </div> 
+            </div>
+        <!-- External JS script -->
+        <script src="scripts.js"></script>
+    </body>
+</html>

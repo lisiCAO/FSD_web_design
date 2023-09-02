@@ -14,10 +14,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login_style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
     <title>Design Proposal Implementation</title>
 </head>
 <body>
     <div class="container">
+
+        <!-- Navbar-->
         <nav>
             <div class="container">
 
@@ -25,20 +28,21 @@
                     <div class="item">
                         <img src="logo.png" alt="Website Logo">
                     </div>
-                    <div class="item">
+                    <form class="item">
                         <label id="input_search">Browser</label>
                         <input type="text" id="input_search" placeholder="🔍 What do you want to learn?" />
-                    </div>
-                </div>  <!-- end of nav_right_container -->
+                    </form>
+                </div>  
 
                 <div class="nav_right_container">
                     <button class="cart-btn">🛒</button>
                     <button class="login-btn">Login</button>
                 </div>
-                
-            </div> <!-- end of .nav_container -->
         </nav>
+        
 
+
+        <!-- Login Modal-->
         <div class="login-modal">
             <div class="container">
 
@@ -56,7 +60,7 @@
                         <span>New here? <a href="#">Create Account</a></span>
                     </div>
 
-                </div> <!-- end of .header_container-->
+                </div> 
 
                 <form class="login-form">
                     <div class="input-container">
@@ -74,9 +78,8 @@
                 <div class="forget_password_container">
                     <a href="#" class="forgot-password">Forgot Password?</a>
                 </div>
-            </div> <!-- end of .modal_container -->
-        </div> <!-- end of login_modal -->
-    </div> <!-- end of .body_container -->
+            </div> 
+        </div> 
     <script src="scripts.js"></script>
 </body>
 </html>
